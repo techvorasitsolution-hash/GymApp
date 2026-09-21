@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitCore Gym Manager | Smart Gym Maintenance & Management</title>
+<meta name="description" content="FitCore Gym Manager - Complete gym maintenance, membership, and equipment management platform.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💪</text></svg>">
+</head>
+<body>
+
+<!-- Demo Banner -->
+<div class="demo-banner">
+  <span>⚡ This is a DEMO application built for showcase purposes — no real data is processed.</span>
+</div>
+
+<!-- Navbar -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">Fit<span>Core</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#equipment">Equipment</a>
+      <a href="#plans">Plans</a>
+      <a href="#trainers">Trainers</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="btn btn-primary nav-cta" id="loginBtn">Member Login</button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <span class="badge">🏋️ Next-Gen Gym Management</span>
+      <h1>Run Your Gym <span class="highlight">Smarter</span>, Not Harder</h1>
+      <p>FitCore helps gym owners manage equipment maintenance, memberships, trainers, and member engagement — all from one powerful dashboard.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary btn-lg" id="requestDemoBtn">Request Live Demo</button>
+        <button class="btn btn-outline btn-lg" id="watchVideoBtn">▶ Watch Overview</button>
+      </div>
+      <div class="hero-stats">
+        <div><strong>250+</strong><span>Gyms Onboard</span></div>
+        <div><strong>40K+</strong><span>Active Members</span></div>
+        <div><strong>99.9%</strong><span>Uptime</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="floating-card card-1">
+        <div class="icon-circle green">✔</div>
+        <div><strong>Equipment Status</strong><span>Treadmill #4 — Healthy</span></div>
+      </div>
+      <div class="floating-card card-2">
+        <div class="icon-circle orange">⚠</div>
+        <div><strong>Maintenance Due</strong><span>Leg Press — Service in 2 days</span></div>
+      </div>
+      <div class="floating-card card-3">
+        <div class="icon-circle blue">👤</div>
+        <div><strong>New Member</strong><span>Priya joined Gold Plan</span></div>
+      </div>
+      <div class="hero-image">🏋️‍♂️</div>
+    </div>
+  </div>
+</section>
+
+<!-- Trusted by -->
+<section class="marquee-section">
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>⚙ Equipment Tracking</span><span>🧾 Automated Billing</span><span>📅 Class Scheduling</span>
+      <span>📊 Analytics Dashboard</span><span>🔔 Maintenance Alerts</span><span>💳 Membership Management</span>
+      <span>⚙ Equipment Tracking</span><span>🧾 Automated Billing</span><span>📅 Class Scheduling</span>
+      <span>📊 Analytics Dashboard</span><span>🔔 Maintenance Alerts</span><span>💳 Membership Management</span>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Why FitCore</span>
+      <h2>Everything Your Gym Needs, In One Place</h2>
+      <p>From equipment health to member happiness — stay on top of it all with real-time insights.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🛠️</div>
+        <h3>Predictive Maintenance</h3>
+        <p>Get automated alerts before equipment breaks down, reducing downtime and repair costs.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📈</div>
+        <h3>Real-Time Analytics</h3>
+        <p>Track footfall, peak hours, revenue and member retention with live dashboards.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💳</div>
+        <h3>Membership & Billing</h3>
+        <p>Automate renewals, invoices and payment reminders — no manual follow-ups needed.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📅</div>
+        <h3>Class & Trainer Scheduling</h3>
+        <p>Smart calendar for classes, PT sessions and trainer availability management.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔔</div>
+        <h3>Instant Notifications</h3>
+        <p>Push alerts to staff and members for maintenance, offers, and schedule changes.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <h3>Mobile Friendly</h3>
+        <p>Manage your gym on the go with a fully responsive experience on any device.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Equipment Maintenance Showcase -->
+<section class="section alt" id="equipment">
+  <div class="container equipment-grid">
+    <div class="equipment-text">
+      <span class="eyebrow">Equipment Maintenance</span>
+      <h2>Never Miss a Service Date Again</h2>
+      <p>FitCore automatically tracks usage hours, service history and warranty status for every machine on your floor — so you always know what needs attention.</p>
+      <ul class="check-list">
+        <li>✅ Auto-scheduled maintenance reminders</li>
+        <li>✅ Equipment lifecycle & warranty tracking</li>
+        <li>✅ Technician assignment & service logs</li>
+        <li>✅ Downtime & cost reports</li>
+      </ul>
+      <button class="btn btn-primary" id="exploreBtn">Explore Maintenance Module</button>
+    </div>
+    <div class="equipment-panel">
+      <div class="panel-header">
+        <span>Live Equipment Status</span>
+        <span class="dot-live">● Live</span>
+      </div>
+      <div class="equip-row">
+        <span class="equip-name">🏃 Treadmill 01</span>
+        <span class="status-pill ok">Healthy</span>
+      </div>
+      <div class="equip-row">
+        <span class="equip-name">🚴 Spin Bike 05</span>
+        <span class="status-pill ok">Healthy</span>
+      </div>
+      <div class="equip-row">
+        <span class="equip-name">🏋️ Leg Press</span>
+        <span class="status-pill warn">Due in 2 days</span>
+      </div>
+      <div class="equip-row">
+        <span class="equip-name">💪 Cable Crossover</span>
+        <span class="status-pill danger">Needs Service</span>
+      </div>
+      <div class="equip-row">
+        <span class="equip-name">🧗 Rowing Machine</span>
+        <span class="status-pill ok">Healthy</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Plans -->
+<section class="section" id="plans">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2>Simple Plans for Every Gym Size</h2>
+      <p>Start free, upgrade as you grow. All plans include core maintenance tracking.</p>
+    </div>
+    <div class="plans-grid">
+      <div class="plan-card">
+        <h3>Starter</h3>
+        <div class="price">₹999<span>/mo</span></div>
+        <ul>
+          <li>Up to 100 members</li>
+          <li>Basic equipment tracking</li>
+          <li>Email support</li>
+        </ul>
+        <button class="btn btn-outline full">Choose Starter</button>
+      </div>
+      <div class="plan-card featured">
+        <span class="ribbon">Most Popular</span>
+        <h3>Growth</h3>
+        <div class="price">₹2,499<span>/mo</span></div>
+        <ul>
+          <li>Up to 500 members</li>
+          <li>Predictive maintenance alerts</li>
+          <li>Class & trainer scheduling</li>
+          <li>Priority support</li>
+        </ul>
+        <button class="btn btn-primary full">Choose Growth</button>
+      </div>
+      <div class="plan-card">
+        <h3>Enterprise</h3>
+        <div class="price">Custom</div>
+        <ul>
+          <li>Unlimited members</li>
+          <li>Multi-branch management</li>
+          <li>Dedicated account manager</li>
+        </ul>
+        <button class="btn btn-outline full">Contact Sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trainers -->
+<section class="section alt" id="trainers">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our Team</span>
+      <h2>Certified Trainers Powering Your Members</h2>
+    </div>
+    <div class="trainers-grid">
+      <div class="trainer-card">
+        <div class="trainer-avatar">🧑‍🏫</div>
+        <h4>Arjun Mehta</h4>
+        <span>Strength Coach</span>
+      </div>
+      <div class="trainer-card">
+        <div class="trainer-avatar">🧑‍🦰</div>
+        <h4>Sneha Kapoor</h4>
+        <span>Yoga & Flexibility</span>
+      </div>
+      <div class="trainer-card">
+        <div class="trainer-avatar">🧔</div>
+        <h4>Rohit Verma</h4>
+        <span>CrossFit Specialist</span>
+      </div>
+      <div class="trainer-card">
+        <div class="trainer-avatar">👩‍🦱</div>
+        <h4>Ayesha Khan</h4>
+        <span>Nutrition & Wellness</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Testimonials</span>
+      <h2>Loved by Gym Owners Everywhere</h2>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p>"FitCore cut our equipment downtime by half. The maintenance alerts alone are worth it."</p>
+        <div class="testimonial-user"><span>👨</span><div><strong>Vikram Singh</strong><small>Owner, PowerHouse Gym</small></div></div>
+      </div>
+      <div class="testimonial-card">
+        <p>"Membership renewals used to be a nightmare. Now it's fully automated."</p>
+        <div class="testimonial-user"><span>👩</span><div><strong>Neha Sharma</strong><small>Manager, FitZone</small></div></div>
+      </div>
+      <div class="testimonial-card">
+        <p>"Simple, clean, and exactly what a small gym needs to look professional."</p>
+        <div class="testimonial-user"><span>🧑</span><div><strong>Karan Patel</strong><small>Owner, IronWorks</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section alt" id="contact">
+  <div class="container contact-grid">
+    <div>
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Ready to Modernize Your Gym?</h2>
+      <p>Fill out the form and our team will reach out to schedule a personalized walkthrough.</p>
+      <div class="contact-info">
+        <div>📍 Ahmedabad, Gujarat, India</div>
+        <div>✉️ techvorasitsolution@gmail.com</div>
+        <div>🏢 Techvoras IT Solution</div>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Phone Number">
+      <textarea rows="4" placeholder="Tell us about your gym..."></textarea>
+      <button type="submit" class="btn btn-primary full">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="logo">Fit<span>Core</span></div>
+      <p>Smart gym maintenance & management platform.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="#features">Features</a>
+      <a href="#equipment">Maintenance</a>
+      <a href="#plans">Pricing</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#trainers">Team</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Developed By</h4>
+      <a href="#" id="footerContactDev">Techvoras IT Solution</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 FitCore Demo — Built by Techvoras IT Solution. All rights reserved.</div>
+</footer>
+
+<!-- Floating Chat / Message Button -->
+<button class="chat-fab" id="chatFab" aria-label="Message us">💬</button>
+
+<!-- Demo Popup Modal -->
+<div class="modal-overlay" id="demoModal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-icon">🚧</div>
+    <h3>This is a Demo Application</h3>
+    <p>Message communication and live chat features are not active in this demo build. This project is a static preview created to showcase design and features for the client.</p>
+    <p class="modal-sub">To activate full functionality (database, real-time chat, authentication) or discuss your project, please contact the developers:</p>
+    <div class="modal-contact">
+      <div><strong>Techvoras IT Solution</strong></div>
+      <div>👤 Joshi (Owner)</div>
+      <div>✉️ <a href="mailto:techvorasitsolution@gmail.com">techvorasitsolution@gmail.com</a></div>
+    </div>
+    <button class="btn btn-primary full" id="modalOkBtn">Got it</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
