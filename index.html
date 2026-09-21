@@ -23,6 +23,7 @@
     <a href="#home" class="logo">Fit<span>Core</span></a>
     <nav class="nav-links" id="navLinks">
       <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
       <a href="#features">Features</a>
       <a href="#equipment">Equipment</a>
       <a href="#plans">Plans</a>
@@ -39,39 +40,47 @@
 </header>
 
 <!-- Hero -->
-<section class="hero" id="home">
-  <div class="hero-bg"></div>
-  <div class="container hero-inner">
-    <div class="hero-text">
-      <span class="badge">🏋️ Next-Gen Gym Management</span>
-      <h1>Run Your Gym <span class="highlight">Smarter</span>, Not Harder</h1>
-      <p>FitCore helps gym owners manage equipment maintenance, memberships, trainers, and member engagement — all from one powerful dashboard.</p>
-      <div class="hero-actions">
-        <button class="btn btn-primary btn-lg" id="requestDemoBtn">Request Live Demo</button>
-        <button class="btn btn-outline btn-lg" id="watchVideoBtn">▶ Watch Overview</button>
-      </div>
-      <div class="hero-stats">
-        <div><strong>250+</strong><span>Gyms Onboard</span></div>
-        <div><strong>40K+</strong><span>Active Members</span></div>
-        <div><strong>99.9%</strong><span>Uptime</span></div>
-      </div>
+<section class="hero-full" id="home">
+  <div class="hero-media">
+    <div class="hero-media-fallback"></div>
+    <img class="hero-media-img" src="assets/images/hero-bg.jpg" alt="Gym floor" onerror="this.style.display='none'">
+    <video class="hero-media-video" autoplay muted loop playsinline poster="assets/images/hero-poster.jpg" onerror="this.style.display='none'">
+      <source src="assets/video/hero-gym.mp4" type="video/mp4">
+    </video>
+    <div class="hero-media-overlay"></div>
+  </div>
+
+  <div class="container hero-full-content">
+    <span class="badge badge-light">🏋️ Next-Gen Gym Management</span>
+    <h1>Run Your Gym <span class="highlight">Smarter</span>, Not Harder</h1>
+    <p>FitCore helps gym owners manage equipment maintenance, memberships, trainers, and member engagement — all from one powerful dashboard.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary btn-lg" id="requestDemoBtn">Request Live Demo</button>
+      <button class="btn btn-outline btn-lg btn-light" id="watchVideoBtn">▶ Watch Overview</button>
     </div>
-    <div class="hero-visual">
-      <div class="floating-card card-1">
-        <div class="icon-circle green">✔</div>
-        <div><strong>Equipment Status</strong><span>Treadmill #4 — Healthy</span></div>
-      </div>
-      <div class="floating-card card-2">
-        <div class="icon-circle orange">⚠</div>
-        <div><strong>Maintenance Due</strong><span>Leg Press — Service in 2 days</span></div>
-      </div>
-      <div class="floating-card card-3">
-        <div class="icon-circle blue">👤</div>
-        <div><strong>New Member</strong><span>Priya joined Gold Plan</span></div>
-      </div>
-      <div class="hero-image">🏋️‍♂️</div>
+    <div class="hero-stats hero-stats-light">
+      <div><strong>250+</strong><span>Gyms Onboard</span></div>
+      <div><strong>40K+</strong><span>Active Members</span></div>
+      <div><strong>99.9%</strong><span>Uptime</span></div>
     </div>
   </div>
+
+  <div class="hero-float-cards">
+    <div class="floating-card card-1">
+      <div class="icon-circle green">✔</div>
+      <div><strong>Equipment Status</strong><span>Treadmill #4 — Healthy</span></div>
+    </div>
+    <div class="floating-card card-2">
+      <div class="icon-circle orange">⚠</div>
+      <div><strong>Maintenance Due</strong><span>Leg Press — Service in 2 days</span></div>
+    </div>
+    <div class="floating-card card-3">
+      <div class="icon-circle blue">👤</div>
+      <div><strong>New Member</strong><span>Priya joined Gold Plan</span></div>
+    </div>
+  </div>
+
+  <a href="#features" class="scroll-cue" aria-label="Scroll down">↓</a>
 </section>
 
 <!-- Trusted by -->
@@ -82,6 +91,49 @@
       <span>📊 Analytics Dashboard</span><span>🔔 Maintenance Alerts</span><span>💳 Membership Management</span>
       <span>⚙ Equipment Tracking</span><span>🧾 Automated Billing</span><span>📅 Class Scheduling</span>
       <span>📊 Analytics Dashboard</span><span>🔔 Maintenance Alerts</span><span>💳 Membership Management</span>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="section gallery-section" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Take A Look Inside</span>
+      <h2>A Gym Your Members Will Love</h2>
+      <p>Modern equipment, spacious training zones, and a motivating atmosphere — built for results.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-tile tile-lg">
+        <div class="gallery-placeholder">🏋️‍♂️</div>
+        <img src="assets/images/gallery-1.jpg" alt="Weight training area" onerror="this.style.display='none'">
+        <span class="gallery-caption">Free Weights Zone</span>
+      </div>
+      <div class="gallery-tile">
+        <div class="gallery-placeholder">🏃‍♀️</div>
+        <img src="assets/images/gallery-2.jpg" alt="Cardio zone" onerror="this.style.display='none'">
+        <span class="gallery-caption">Cardio Zone</span>
+      </div>
+      <div class="gallery-tile">
+        <div class="gallery-placeholder">🧘‍♀️</div>
+        <img src="assets/images/gallery-3.jpg" alt="Yoga and stretching studio" onerror="this.style.display='none'">
+        <span class="gallery-caption">Yoga & Stretching</span>
+      </div>
+      <div class="gallery-tile">
+        <div class="gallery-placeholder">🤸</div>
+        <img src="assets/images/gallery-4.jpg" alt="Group fitness class" onerror="this.style.display='none'">
+        <span class="gallery-caption">Group Classes</span>
+      </div>
+      <div class="gallery-tile tile-lg">
+        <div class="gallery-placeholder">💪</div>
+        <img src="assets/images/gallery-5.jpg" alt="Personal training session" onerror="this.style.display='none'">
+        <span class="gallery-caption">Personal Training</span>
+      </div>
+      <div class="gallery-tile">
+        <div class="gallery-placeholder">🚿</div>
+        <img src="assets/images/gallery-6.jpg" alt="Locker rooms" onerror="this.style.display='none'">
+        <span class="gallery-caption">Locker Rooms</span>
+      </div>
     </div>
   </div>
 </section>
@@ -227,22 +279,34 @@
     </div>
     <div class="trainers-grid">
       <div class="trainer-card">
-        <div class="trainer-avatar">🧑‍🏫</div>
+        <div class="trainer-avatar">
+          <span>🧑‍🏫</span>
+          <img src="assets/images/trainer-1.jpg" alt="Arjun Mehta" onerror="this.style.display='none'">
+        </div>
         <h4>Arjun Mehta</h4>
         <span>Strength Coach</span>
       </div>
       <div class="trainer-card">
-        <div class="trainer-avatar">🧑‍🦰</div>
+        <div class="trainer-avatar">
+          <span>🧑‍🦰</span>
+          <img src="assets/images/trainer-2.jpg" alt="Sneha Kapoor" onerror="this.style.display='none'">
+        </div>
         <h4>Sneha Kapoor</h4>
         <span>Yoga & Flexibility</span>
       </div>
       <div class="trainer-card">
-        <div class="trainer-avatar">🧔</div>
+        <div class="trainer-avatar">
+          <span>🧔</span>
+          <img src="assets/images/trainer-3.jpg" alt="Rohit Verma" onerror="this.style.display='none'">
+        </div>
         <h4>Rohit Verma</h4>
         <span>CrossFit Specialist</span>
       </div>
       <div class="trainer-card">
-        <div class="trainer-avatar">👩‍🦱</div>
+        <div class="trainer-avatar">
+          <span>👩‍🦱</span>
+          <img src="assets/images/trainer-4.jpg" alt="Ayesha Khan" onerror="this.style.display='none'">
+        </div>
         <h4>Ayesha Khan</h4>
         <span>Nutrition & Wellness</span>
       </div>
