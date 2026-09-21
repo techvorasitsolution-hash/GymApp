@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard | FitCore Gym Manager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💪</text></svg>">
+</head>
+<body class="admin-body">
+
+<div class="demo-banner">
+  <span>⚡ Admin Dashboard DEMO — all figures below are sample data for presentation purposes only.</span>
+</div>
+
+<div class="admin-shell">
+  <!-- Sidebar -->
+  <aside class="admin-sidebar" id="adminSidebar">
+    <a href="index.html" class="logo admin-logo">Fit<span>Core</span></a>
+    <nav class="admin-nav">
+      <button class="admin-nav-item active" data-tab="overview">📊 Overview</button>
+      <button class="admin-nav-item" data-tab="members">🧑‍🤝‍🧑 Members & Attendance</button>
+      <button class="admin-nav-item" data-tab="diet">🥗 Diet Plans & Progress</button>
+      <button class="admin-nav-item" data-tab="fees">💳 Fee Transactions</button>
+      <button class="admin-nav-item" data-tab="equipment">🛠️ Equipment & Service</button>
+      <button class="admin-nav-item" data-tab="expenses">🧾 Gym Expenses</button>
+      <button class="admin-nav-item" data-tab="profit">📈 Profit Report</button>
+      <button class="admin-nav-item" data-tab="gst">🧮 GST Report</button>
+    </nav>
+    <a href="index.html" class="admin-back">← Back to Website</a>
+  </aside>
+
+  <!-- Main -->
+  <main class="admin-main">
+    <header class="admin-topbar">
+      <button class="admin-hamburger" id="adminHamburger">☰</button>
+      <h2 id="adminPageTitle">Overview</h2>
+      <div class="admin-user">
+        <span>👤 Admin (Joshi)</span>
+        <button class="btn btn-primary" id="adminAddBtn">+ Add New</button>
+      </div>
+    </header>
+
+    <!-- ===== Overview ===== -->
+    <section class="admin-tab active" id="tab-overview">
+      <div class="stat-grid">
+        <div class="stat-card"><span class="stat-icon">🧑‍🤝‍🧑</span><div><strong>186</strong><small>Total Members</small></div></div>
+        <div class="stat-card good"><span class="stat-icon">✅</span><div><strong>142</strong><small>Regular Members</small></div></div>
+        <div class="stat-card warn"><span class="stat-icon">⚠️</span><div><strong>44</strong><small>Irregular Members</small></div></div>
+        <div class="stat-card"><span class="stat-icon">📅</span><div><strong>63</strong><small>Present Today</small></div></div>
+        <div class="stat-card"><span class="stat-icon">🥗</span><div><strong>38</strong><small>On Diet Plans</small></div></div>
+        <div class="stat-card"><span class="stat-icon">🛠️</span><div><strong>3</strong><small>Equipment Due for Service</small></div></div>
+        <div class="stat-card good"><span class="stat-icon">💰</span><div><strong>₹2,48,500</strong><small>Revenue (This Month)</small></div></div>
+        <div class="stat-card bad"><span class="stat-icon">📉</span><div><strong>₹1,57,000</strong><small>Expenses (This Month)</small></div></div>
+        <div class="stat-card good"><span class="stat-icon">📈</span><div><strong>₹91,500</strong><small>Net Profit (This Month)</small></div></div>
+      </div>
+
+      <div class="admin-panel">
+        <h3>Recent Activity</h3>
+        <ul class="activity-list">
+          <li><span class="dot ok"></span> Priya Sharma checked in at 7:05 AM</li>
+          <li><span class="dot warn"></span> Cable Crossover flagged for service — due in 2 days</li>
+          <li><span class="dot ok"></span> Rahul Joshi paid ₹4,999 for Platinum renewal</li>
+          <li><span class="dot bad"></span> Ayesha Khan missed 5 consecutive sessions</li>
+          <li><span class="dot ok"></span> Karan Patel logged new diet progress — lost 1.2kg this week</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Members & Attendance ===== -->
+    <section class="admin-tab" id="tab-members">
+      <div class="admin-panel">
+        <div class="panel-toolbar"><input type="text" placeholder="🔍 Search members..." class="admin-search"></div>
+        <div class="table-wrap">
+        <table class="admin-table">
+          <thead><tr><th>Member</th><th>Plan</th><th>Joined</th><th>Status</th><th>Attendance (This Month)</th><th>Last Check-in</th></tr></thead>
+          <tbody>
+            <tr><td>Priya Sharma</td><td><span class="tag gold">Gold</span></td><td>10 Nov 2025</td><td><span class="tag-status ok">Regular</span></td><td><div class="bar"><div style="width:92%"></div></div>92%</td><td>21 Sep 2026, 7:05 AM</td></tr>
+            <tr><td>Rohit Mehta</td><td><span class="tag gold">Gold</span></td><td>02 Aug 2025</td><td><span class="tag-status ok">Regular</span></td><td><div class="bar"><div style="width:88%"></div></div>88%</td><td>21 Sep 2026, 6:40 AM</td></tr>
+            <tr><td>Ayesha Khan</td><td><span class="tag silver">Silver</span></td><td>15 Jan 2026</td><td><span class="tag-status bad">Irregular</span></td><td><div class="bar warn"><div style="width:54%"></div></div>54%</td><td>14 Sep 2026, 5:30 PM</td></tr>
+            <tr><td>Karan Patel</td><td><span class="tag platinum">Platinum</span></td><td>20 May 2025</td><td><span class="tag-status ok">Regular</span></td><td><div class="bar"><div style="width:95%"></div></div>95%</td><td>21 Sep 2026, 8:10 AM</td></tr>
+            <tr><td>Neha Verma</td><td><span class="tag silver">Silver</span></td><td>01 Feb 2026</td><td><span class="tag-status bad">Irregular</span></td><td><div class="bar warn"><div style="width:40%"></div></div>40%</td><td>10 Sep 2026, 6:00 PM</td></tr>
+            <tr><td>Vikram Singh</td><td><span class="tag gold">Gold</span></td><td>05 Dec 2025</td><td><span class="tag-status ok">Regular</span></td><td><div class="bar"><div style="width:80%"></div></div>80%</td><td>20 Sep 2026, 7:45 PM</td></tr>
+            <tr><td>Simran Kaur</td><td><span class="tag platinum">Platinum</span></td><td>18 Sep 2025</td><td><span class="tag-status ok">Regular</span></td><td><div class="bar"><div style="width:90%"></div></div>90%</td><td>21 Sep 2026, 6:55 AM</td></tr>
+            <tr><td>Aman Gupta</td><td><span class="tag silver">Silver</span></td><td>01 Mar 2026</td><td><span class="tag-status bad">Irregular</span></td><td><div class="bar warn"><div style="width:35%"></div></div>35%</td><td>08 Sep 2026, 7:00 PM</td></tr>
+            <tr><td>Divya Nair</td><td><span class="tag gold">Gold</span></td><td>22 Jul 2025</td><td><span class="tag-status ok">Regular</span></td><td><div class="bar"><div style="width:85%"></div></div>85%</td><td>21 Sep 2026, 7:20 AM</td></tr>
+            <tr><td>Rahul Joshi</td><td><span class="tag platinum">Platinum</span></td><td>10 Jun 2025</td><td><span class="tag-status ok">Regular</span></td><td><div class="bar"><div style="width:93%"></div></div>93%</td><td>21 Sep 2026, 6:15 AM</td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="table-note">Showing 10 of 186 members (demo sample)</p>
+      </div>
+    </section>
+
+    <!-- ===== Diet Plans ===== -->
+    <section class="admin-tab" id="tab-diet">
+      <div class="admin-panel">
+        <div class="table-wrap">
+        <table class="admin-table">
+          <thead><tr><th>Member</th><th>Plan Type</th><th>Start Weight</th><th>Current Weight</th><th>Target Weight</th><th>Progress</th></tr></thead>
+          <tbody>
+            <tr><td>Priya Sharma</td><td>Weight Loss</td><td>72 kg</td><td>66.5 kg</td><td>60 kg</td><td><div class="bar"><div style="width:46%"></div></div>46%</td></tr>
+            <tr><td>Karan Patel</td><td>Muscle Gain</td><td>68 kg</td><td>73 kg</td><td>78 kg</td><td><div class="bar"><div style="width:50%"></div></div>50%</td></tr>
+            <tr><td>Rohit Mehta</td><td>Weight Loss</td><td>90 kg</td><td>84 kg</td><td>75 kg</td><td><div class="bar warn"><div style="width:40%"></div></div>40%</td></tr>
+            <tr><td>Simran Kaur</td><td>Keto Diet</td><td>65 kg</td><td>59 kg</td><td>55 kg</td><td><div class="bar"><div style="width:60%"></div></div>60%</td></tr>
+            <tr><td>Vikram Singh</td><td>Muscle Gain</td><td>70 kg</td><td>72.5 kg</td><td>80 kg</td><td><div class="bar warn"><div style="width:25%"></div></div>25%</td></tr>
+            <tr><td>Divya Nair</td><td>Weight Loss</td><td>78 kg</td><td>70 kg</td><td>65 kg</td><td><div class="bar"><div style="width:62%"></div></div>62%</td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="table-note">38 members currently on active diet plans (6 shown)</p>
+      </div>
+    </section>
+
+    <!-- ===== Fee Transactions ===== -->
+    <section class="admin-tab" id="tab-fees">
+      <div class="admin-panel">
+        <div class="table-wrap">
+        <table class="admin-table">
+          <thead><tr><th>Invoice</th><th>Member</th><th>Plan</th><th>Amount</th><th>Mode</th><th>Date</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>INV-1042</td><td>Rahul Joshi</td><td>Platinum Renewal</td><td>₹4,999</td><td>UPI</td><td>20 Sep 2026</td><td><span class="tag-status ok">Paid</span></td></tr>
+            <tr><td>INV-1041</td><td>Priya Sharma</td><td>Gold Renewal</td><td>₹2,999</td><td>Card</td><td>19 Sep 2026</td><td><span class="tag-status ok">Paid</span></td></tr>
+            <tr><td>INV-1040</td><td>Ayesha Khan</td><td>Silver Renewal</td><td>₹1,499</td><td>Cash</td><td>18 Sep 2026</td><td><span class="tag-status warn">Pending</span></td></tr>
+            <tr><td>INV-1039</td><td>Karan Patel</td><td>Platinum + PT</td><td>₹7,499</td><td>UPI</td><td>17 Sep 2026</td><td><span class="tag-status ok">Paid</span></td></tr>
+            <tr><td>INV-1038</td><td>Neha Verma</td><td>Silver Renewal</td><td>₹1,499</td><td>Cash</td><td>15 Sep 2026</td><td><span class="tag-status bad">Overdue</span></td></tr>
+            <tr><td>INV-1037</td><td>Simran Kaur</td><td>Platinum Renewal</td><td>₹4,999</td><td>UPI</td><td>14 Sep 2026</td><td><span class="tag-status ok">Paid</span></td></tr>
+            <tr><td>INV-1036</td><td>Vikram Singh</td><td>Gold Renewal</td><td>₹2,999</td><td>Card</td><td>12 Sep 2026</td><td><span class="tag-status ok">Paid</span></td></tr>
+            <tr><td>INV-1035</td><td>Aman Gupta</td><td>Silver Renewal</td><td>₹1,499</td><td>Cash</td><td>10 Sep 2026</td><td><span class="tag-status warn">Pending</span></td></tr>
+          </tbody>
+        </table>
+        </div>
+        <div class="totals-row">
+          <div><small>Total Collected</small><strong>₹2,04,900</strong></div>
+          <div><small>Pending</small><strong class="warn-text">₹8,997</strong></div>
+          <div><small>Overdue</small><strong class="bad-text">₹1,499</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Equipment & Service ===== -->
+    <section class="admin-tab" id="tab-equipment">
+      <div class="admin-panel">
+        <div class="table-wrap">
+        <table class="admin-table">
+          <thead><tr><th>Equipment</th><th>Qty</th><th>Purchase Cost (each)</th><th>Current Value</th><th>Last Service</th><th>Next Service Due</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>🏃 Treadmill</td><td>4</td><td>₹85,000</td><td>₹58,000</td><td>05 Aug 2026</td><td>05 Nov 2026</td><td><span class="tag-status ok">Healthy</span></td></tr>
+            <tr><td>🚴 Spin Bike</td><td>6</td><td>₹32,000</td><td>₹24,000</td><td>10 Aug 2026</td><td>10 Nov 2026</td><td><span class="tag-status ok">Healthy</span></td></tr>
+            <tr><td>🏋️ Leg Press</td><td>2</td><td>₹65,000</td><td>₹41,000</td><td>01 Jul 2026</td><td>23 Sep 2026</td><td><span class="tag-status warn">Due Soon</span></td></tr>
+            <tr><td>💪 Cable Crossover</td><td>1</td><td>₹78,000</td><td>₹50,000</td><td>15 May 2026</td><td>18 Sep 2026</td><td><span class="tag-status bad">Overdue</span></td></tr>
+            <tr><td>🧗 Rowing Machine</td><td>3</td><td>₹54,000</td><td>₹38,000</td><td>28 Aug 2026</td><td>28 Nov 2026</td><td><span class="tag-status ok">Healthy</span></td></tr>
+            <tr><td>🏗️ Multi-Station</td><td>1</td><td>₹1,20,000</td><td>₹95,000</td><td>02 Sep 2026</td><td>02 Dec 2026</td><td><span class="tag-status ok">Healthy</span></td></tr>
+            <tr><td>🔩 Dumbbell Set (5-50kg)</td><td>1 set</td><td>₹45,000</td><td>₹38,000</td><td>—</td><td>—</td><td><span class="tag-status ok">Healthy</span></td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="table-note">Total equipment asset value (current): <strong>₹3,44,000</strong> · 3 items due for service in the next 30 days</p>
+      </div>
+    </section>
+
+    <!-- ===== Expenses ===== -->
+    <section class="admin-tab" id="tab-expenses">
+      <div class="admin-panel">
+        <div class="table-wrap">
+        <table class="admin-table">
+          <thead><tr><th>Category</th><th>Description</th><th>Date</th><th>Amount</th></tr></thead>
+          <tbody>
+            <tr><td>🏢 Rent</td><td>Monthly premises rent</td><td>01 Sep 2026</td><td>₹45,000</td></tr>
+            <tr><td>💡 Electricity</td><td>Power bill</td><td>03 Sep 2026</td><td>₹12,500</td></tr>
+            <tr><td>👥 Staff Salary</td><td>Trainers & front desk (4 staff)</td><td>05 Sep 2026</td><td>₹85,000</td></tr>
+            <tr><td>🛠️ Equipment Maintenance</td><td>Leg press & cable crossover servicing</td><td>18 Sep 2026</td><td>₹8,000</td></tr>
+            <tr><td>💧 Water</td><td>Water supply</td><td>03 Sep 2026</td><td>₹2,000</td></tr>
+            <tr><td>🌐 Internet</td><td>Broadband + CCTV cloud</td><td>04 Sep 2026</td><td>₹1,500</td></tr>
+            <tr><td>🧴 Supplies</td><td>Cleaning, towels, sanitizer</td><td>10 Sep 2026</td><td>₹3,000</td></tr>
+          </tbody>
+        </table>
+        </div>
+        <div class="totals-row">
+          <div><small>Total Expenses (Sep 2026)</small><strong class="bad-text">₹1,57,000</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Profit Report ===== -->
+    <section class="admin-tab" id="tab-profit">
+      <div class="admin-panel">
+        <div class="table-wrap">
+        <table class="admin-table">
+          <thead><tr><th>Month</th><th>Revenue</th><th>Expenses</th><th>Net Profit</th><th>Margin</th></tr></thead>
+          <tbody>
+            <tr><td>Apr 2026</td><td>₹2,10,000</td><td>₹1,48,000</td><td class="good-text">₹62,000</td><td>29.5%</td></tr>
+            <tr><td>May 2026</td><td>₹2,25,500</td><td>₹1,51,200</td><td class="good-text">₹74,300</td><td>32.9%</td></tr>
+            <tr><td>Jun 2026</td><td>₹2,18,000</td><td>₹1,49,800</td><td class="good-text">₹68,200</td><td>31.3%</td></tr>
+            <tr><td>Jul 2026</td><td>₹2,32,400</td><td>₹1,53,000</td><td class="good-text">₹79,400</td><td>34.2%</td></tr>
+            <tr><td>Aug 2026</td><td>₹2,41,000</td><td>₹1,55,500</td><td class="good-text">₹85,500</td><td>35.5%</td></tr>
+            <tr><td>Sep 2026</td><td>₹2,48,500</td><td>₹1,57,000</td><td class="good-text">₹91,500</td><td>36.8%</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td>6-Month Total</td><td>₹13,75,400</td><td>₹9,14,500</td><td class="good-text">₹4,60,900</td><td>33.5% avg</td></tr>
+          </tfoot>
+        </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GST Report ===== -->
+    <section class="admin-tab" id="tab-gst">
+      <div class="admin-panel">
+        <div class="table-wrap">
+        <table class="admin-table">
+          <thead><tr><th>Month</th><th>Taxable Value</th><th>CGST (9%)</th><th>SGST (9%)</th><th>Total GST</th><th>Total Invoiced</th></tr></thead>
+          <tbody>
+            <tr><td>Apr 2026</td><td>₹1,77,966</td><td>₹16,017</td><td>₹16,017</td><td>₹32,034</td><td>₹2,10,000</td></tr>
+            <tr><td>May 2026</td><td>₹1,91,102</td><td>₹17,199</td><td>₹17,199</td><td>₹34,398</td><td>₹2,25,500</td></tr>
+            <tr><td>Jun 2026</td><td>₹1,84,746</td><td>₹16,627</td><td>₹16,627</td><td>₹33,254</td><td>₹2,18,000</td></tr>
+            <tr><td>Jul 2026</td><td>₹1,96,949</td><td>₹17,725</td><td>₹17,725</td><td>₹35,450</td><td>₹2,32,400</td></tr>
+            <tr><td>Aug 2026</td><td>₹2,04,237</td><td>₹18,381</td><td>₹18,381</td><td>₹36,763</td><td>₹2,41,000</td></tr>
+            <tr><td>Sep 2026</td><td>₹2,10,593</td><td>₹18,953</td><td>₹18,953</td><td>₹37,907</td><td>₹2,48,500</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td>6-Month Total</td><td>₹11,65,593</td><td>₹1,04,902</td><td>₹1,04,902</td><td>₹2,09,806</td><td>₹13,75,400</td></tr>
+          </tfoot>
+        </table>
+        </div>
+        <p class="table-note">GST calculated at 18% (9% CGST + 9% SGST) on membership & PT services, inclusive method. GSTIN: 24DEMO0000X1Z5 (sample, for demo only)</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- Demo Popup Modal -->
+<div class="modal-overlay" id="demoModal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-icon">🚧</div>
+    <h3>This is a Demo Application</h3>
+    <p>Add / edit / export actions are disabled in this static demo. All figures shown are sample data for presentation purposes only.</p>
+    <p class="modal-sub">To activate full functionality (live database, real-time updates, GST filing integration) or discuss your project, please contact the developers:</p>
+    <div class="modal-contact">
+      <div><strong>Techvoras IT Solution</strong></div>
+      <div>👤 Joshi (Owner)</div>
+      <div>✉️ <a href="mailto:techvorasitsolution@gmail.com">techvorasitsolution@gmail.com</a></div>
+    </div>
+    <button class="btn btn-primary full" id="modalOkBtn">Got it</button>
+  </div>
+</div>
+
+<button class="chat-fab" id="chatFab" aria-label="Message us">💬</button>
+
+<script src="js/script.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

@@ -48,19 +48,21 @@ document.addEventListener('DOMContentLoaded', () => {
   // Mobile nav toggle
   const hamburger = document.getElementById('hamburger');
   const navbar = document.getElementById('navbar');
-  hamburger.addEventListener('click', () => {
-    navbar.classList.toggle('mobile-open');
-  });
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => navbar.classList.remove('mobile-open'));
-  });
+  if (hamburger && navbar) {
+    hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('mobile-open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => navbar.classList.remove('mobile-open'));
+    });
 
-  // Sticky navbar shadow on scroll
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
-      navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.06)';
-    } else {
-      navbar.style.boxShadow = 'none';
-    }
-  });
+    // Sticky navbar shadow on scroll
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.06)';
+      } else {
+        navbar.style.boxShadow = 'none';
+      }
+    });
+  }
 });
